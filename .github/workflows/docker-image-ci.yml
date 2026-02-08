@@ -7,12 +7,16 @@ on:
     tags:
       - 'v*.*.*'
 
+permissions:
+  contents: read
+  packages: write
+
 jobs:
   docker:
     runs-on: ubuntu-latest
     steps:
-      - name: Publish Docker image
+      -
+        name: Publish Docker image
         uses: k-ishigaki/publish-docker-image-action@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-
