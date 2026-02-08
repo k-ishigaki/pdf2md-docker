@@ -1,0 +1,16 @@
+{
+  "name": "pdf2md-api",
+  "version": "0.1.0",
+  "private": true,
+  "description": "API server that converts PDF to Markdown using @opendocsg/pdf2md",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "@opendocsg/pdf2md": "^0.2.2",
+    "express": "^4.19.2",
+    "multer": "^1.4.5-lts.1",
+    "pdfjs-dist": "4.0.189"
+  }
+}

@@ -1,0 +1,10 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      PORT: "8080"
+      MAX_FILE_SIZE_MB: "20"
+      CONVERT_TIMEOUT_MS: "60000"
+    restart: unless-stopped
