@@ -2,6 +2,8 @@
 
 PDF を Markdown に変換する API サーバーです。`@opendocsg/pdf2md` を利用しています。
 
+- 使用ライブラリ: https://github.com/opendocsg/pdf2md
+
 ## 起動
 
 ```bash
